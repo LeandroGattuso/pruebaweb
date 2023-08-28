@@ -27,15 +27,15 @@ const dataTableOptions = {
 };
 
 const initDataTable = async () => {
-    if (dataTableIsInitialized) {
-        dataTable.destroy();
+    if (!dataTableIsInitialized) { // Verifica si ya se inicializó el DataTable
+        if (dataTable) {
+            dataTable.destroy(); // Destruye el DataTable existente si lo hay
+        }
+
+        dataTable = $("#tblListInt").DataTable(dataTableOptions);
+
+        dataTableIsInitialized = true;
     }
-
-    await mainFunc();
-
-    dataTable = $("#tblListInt").DataTable(dataTableOptions);
-
-    dataTableIsInitialized = true;
 };
 //FIN ***************************************************************************** */
 
@@ -98,6 +98,11 @@ const mainFunc = async () => {
 
             document.getElementById("tblERP_ART_BUS_POS").innerHTML = tablaListInte;
 
+            //ver            
+            if (!dataTableIsInitialized) {
+                initDataTable();
+            }
+
         }
         else{
             alertaErrorRedireccionar("La sesión expiró", "/index.html");            
@@ -111,10 +116,12 @@ const mainFunc = async () => {
 
 
 //inicio funcion principal
-mainFunc();
-
-window.addEventListener("DOMContentLoaded", async () => {    
-    await initDataTable(); 
+// Ejecuta mainFunc al cargar la página
+window.addEventListener("DOMContentLoaded", () => {
+    mainFunc(URL).then(() => {
+        // Llama a initDataTable después de que mainFunc haya completado
+        initDataTable();
+    });
 });
 
 
