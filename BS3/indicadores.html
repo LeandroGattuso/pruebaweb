@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>ITRIS - Software</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/indicadores.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-6.jpg">
+
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a class="simple-text">
+                        <img src="../BS3/assets/img/logo_2.png" alt="Logo de ITRIS">
+                    </a>
+                </div>
+
+                <ul class="nav">
+                    <li>
+                        <a href="glp.html">
+                            <i class="pe-7s-note2"></i>
+                            <p>GLP por artículo</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lista_integral.html">
+                            <i class="pe-7s-note2"></i>
+                            <p>Lista integral</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="dh_suc_con_ven.html">
+                            <i class="pe-7s-graph"></i>
+                            <p>Indicadores</p>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="table.html">
+                            <i class="pe-7s-note2"></i>
+                            <p>Table List</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="typography.html">
+                            <i class="pe-7s-news-paper"></i>
+                            <p>Typography</p>
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="dh_suc_con_ven.html">
+                            <i class="pe-7s-science"></i>
+                            <p>Informes</p>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="maps.html">
+                            <i class="pe-7s-map-marker"></i>
+                            <p>Maps</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html">
+                            <i class="pe-7s-bell"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-fixed">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navigation-example-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="inicio.html">Menú</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-left">
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <p>
+                                        Opciones
+                                        <b class="caret"></b>
+                                    </p>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">---</a></li>
+                                    <li><a href="#">---</a></li>                                
+                                    <li class="divider"></li>
+                                    <li><a href="#">---</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../index.html">
+                                    <p>Cerrar sesión</p>
+                                </a>
+                            </li>
+                            <li class="separator hidden-lg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Main -->
+                            <main class="main-container">
+                                <div class="main-title">
+                                    <p class="font-weight-bold">INDICADORES</p>
+                                </div>
+
+                                <!-- campos de fecha para FILTRO -->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="fechaDesde">Fecha Desde:</label>
+                                            <input type="date" class="form-control" id="fechaDesde">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="fechaHasta">Fecha Hasta:</label>
+                                            <input type="date" class="form-control" id="fechaHasta">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary" id="calcularDatos" onclick="calcular()">Aplicar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN campos de fecha para FILTRO -->
+
+                                <div class="main-cards">
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <p class="text-primary">Total VENTAS</p>
+                                            <span class="material-icons-outlined text-green">shopping_cart</span>
+                                        </div>
+                                        <span id="totVentas" class="text-primary font-weight-bold"></span>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <p class="text-primary">Total COMPRAS</p>
+                                            <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+                                        </div>
+                                        <span id="totCompras" class="text-primary font-weight-bold"></span>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <p class="text-primary">Total ARTICULOS</p>
+                                            <span class="material-icons-outlined text-blue">inventory_2</span>
+                                        </div>
+                                        <span id="totArti" class="text-primary font-weight-bold"></span>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-inner">
+                                            <p class="text-primary">ALERTAS STOCK</p>
+                                            <span class="material-icons-outlined text-red">notification_important</span>
+                                        </div>
+                                        <span class="text-primary font-weight-bold">156</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="charts">
+
+                                    <div class="charts-card">
+                                        <p class="chart-title">Top 5 Artículos mas vendidos</p>
+                                        <div id="bar_art_vend"></div>
+                                    </div>
+
+                                    <div class="charts-card">
+                                        <p class="chart-title">COMPRAS y VENTAS</p>
+                                        <div id="area_compras_ventas"></div>
+                                    </div>
+
+                                    <div class="charts-card">
+                                        <p class="chart-title">Top 5 Sucursales con mas ventas</p>
+                                        <div id="bar_art_vend_2"></div>
+                                    </div>
+
+                                    <div class="charts-card">
+                                        <p class="chart-title">MEDIOS DE COBRO</p>
+                                        <div id="area_compras_ventas_2"></div>
+                                    </div>
+
+                                </div>
+                            </main>
+                            <!-- End Main -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a id="ftUser">
+                                    
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                        <a href="https://www.itris.com.ar/ofertas.php" target="_blank">ITRIS - Software</a>
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+
+<!-- ApexCharts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+
+<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+<script src="assets/js/indicadores.js"></script>
+
+
+</html>
