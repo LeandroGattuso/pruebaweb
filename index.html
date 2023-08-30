@@ -21,11 +21,22 @@
 
 </head>
 <body>
+<!--
+  <video autoplay loop id="bgVideo">
+    <source src="./BS3/assets/img/video_login.mp4" type="video/mp4">    
+  </video>
+-->
+  <div class="embed-responsive embed-responsive-16by9">
+    <video autoplay loop id="bgVideo" class="embed-responsive-item">
+      <source src="./BS3/assets/img/video_login.mp4" type="video/mp4">
+    </video>
+  </div>
+
   <div class="wrapper">
 <div class="text-center">
     <form action="#">
-        <img class="mb-4 mx-auto" src="https://www.itris.com.ar/b/logo.png" alt="" width="147" height="70">
-        <h2 class="fs-3">Acceso a ITRIS</h2>
+        <img class="mb-4 mx-auto" src="./BS3/assets/img/logo_3.png" alt="" width="147" height="70">
+        <!--<h2 class="fs-3">Acceso a ITRIS</h2>-->
         <div class="input-field">
         <input type="text" id="user">
         <label>Usuario</label>
